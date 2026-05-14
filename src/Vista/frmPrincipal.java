@@ -5,6 +5,7 @@
 package Vista;
 
 import java.time.LocalDate;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -329,7 +330,9 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuscarClienteActionPerformed
 
     private void btnCrearClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearClienteActionPerformed
+
         // TODO add your handling code here:
+        crearCliente();
     }//GEN-LAST:event_btnCrearClienteActionPerformed
 
     /**
@@ -416,4 +419,18 @@ public class frmPrincipal extends javax.swing.JFrame {
             
         }
     }
+
+    private void crearCliente() {
+        if (txtDocumentoCliente.getText().equals("")){
+            JOptionPane.showMessageDialog(this,"El documento es obligatorio");
+        }else if (txtNombreCliente.getText().equals("")){
+            JOptionPane.showMessageDialog(this,"El nombre es obligatorio");
+        }else if (txtCorreoCliente.getText().equals("")){
+            JOptionPane.showMessageDialog(this,"El correo es obligatorio");
+    }else if (txtTelefonoCliente.getText().equals("")){
+            JOptionPane.showMessageDialog(this,"El telefono es obligatorio");
+    }else if (txtEstaturaCliente.getText().equals("")){
+            JOptionPane.showMessageDialog(this,"El estatura es obligatorio");
+    }
+}
 }

@@ -8,11 +8,13 @@ public class Banco {
     private String Nombre;
     private int Nit;
     ArrayList<cuenta> lstCuentas;
+     ArrayList<Cliente> lstCliente;
     
     public Banco(){
         this.Nit = "123456789-01";
-        this.
+        this.Nombre = "Banco U. caldas";
         this.lstCuentas = new ArrayList<>();
+        this.lstCliente = new ArrayList<>();
 
     }
 
